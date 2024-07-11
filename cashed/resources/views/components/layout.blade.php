@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Dashboard</title>
+    <title>Cashed App</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
@@ -14,7 +14,7 @@
 
     <style>
         * {
-            font-family: 'Inter', sans-serif;
+            font-family: 'Inter';
         }
     </style>
 
@@ -34,7 +34,7 @@
                     <a class="nav-link active" aria-current="page" href="/">Dashboard</a>
                     <a class="nav-link" href="#">Order</a>
                     <a class="nav-link" href="/categories">Categories</a>
-                    <a class="nav-link" href="/products">Product</a>
+                    <a class="nav-link" href="/products">Products</a>
                     <a class="nav-link" href="/users">Users</a>
                 </div>
             </div>
@@ -42,7 +42,9 @@
     </nav>
 
     @isset($title)
-        <div class="border-bottom mb-3"></div>
+        <div class="border-bottom mb-3">
+            <h4 class="container py-4 fw-bold">{{ $title }}</h4>
+        </div>
     @endisset
 
     {{ $slot }}

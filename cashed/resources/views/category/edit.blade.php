@@ -1,5 +1,5 @@
 <x-layout>
-    <x-slot:title>Tambah Category</x-slot:title>
+    <x-slot:title>Edit Category</x-slot:title>
 
     <div class="container">
         <div class="row">

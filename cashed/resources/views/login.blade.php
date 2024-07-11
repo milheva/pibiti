@@ -14,7 +14,7 @@
 
     <style>
         * {
-            font-family: 'Inter', sans-serif;
+            font-family: 'Inter';
         }
 
         .login-card {
@@ -25,6 +25,7 @@
             height: 100dvh;
         }
     </style>
+
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
